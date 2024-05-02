@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+<body>
+    <header class="header">
+            <a href="index.html" class="name">Akash Kanar</a>
+        
+            <nav class="navbar">
+                    <a href="#home-section">Home</a>
+                    <a href="#about-section">About</a>
+                    <a href="#skills-section" >Skills</a>
+                    <a href="#projects-section" >Projects</a>
+                    <a href="#contact-section">Contact</a> 
+            </nav>
+    </header>
+    <section id="home-section" class="home">
+        <div class="text">
+            <p1>Hello !!</p1>
+            <h1>I'm <span>Akash Kanar</span><br></h1>
+            <!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student  ',
+						'Web developer  ',
+						'Programmer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+         
+            <p>Passionate web developer with a flair for design. Crafting<br>clean, responsive, and user-friendly interfaces that captivate and engage audiences.</p>
+            <a href="Resume.pdf" class="button">Resume</a>
+        </div>
+        <div class="img">
+          
+        </div>
+    </section>
+    <section id="about-section" class="about">
+        <div class="imge">
+               <img src="" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>B.Tech Undergraduate <span>Student</span></h3>
+            <p>Hello Everyone, I am Akash kanar, a B.tech 2nd year student at Sambalpur University Institute of Information Iechnology(SUIIT). My hobbies are Coding, Singing, wriiting, Reading etc. I am a good listener and learner, able to communicate well with a group and on an individual level. I am able to motivate and direct my talents and skills to meet objectives. I always seek to achieve a high standard in whatever work I undertake. I am well organised with a clear and positive approach to problem solving. </p>
+        </div>
+    </section>
+    
+    <section id="skills-section" class="skill">
+        <div class="skill-1">
+            <div class="shadow">
+            <h2><p class="title">My<p3> Skills</p3></p></h2>
+            <p2>HTML :- 95%</p2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p2>CSS :- 85%</p2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p2>JavaScript :- 85%</p2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p2>Python :- 85%</p2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p2>Java :- 80%</p2>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects-section">
+       <div class="project-title">
+        <h2><p class="title">My<p3> Projects</p3></p></h2>
+       </div>
+       <div class="project-list">
+         <div class="project-1">
+            <a href="">Simple Calculator</a>
+         </div>
+         <div class="project-2">
+            <a href="">E-commerece Website</a>
+         </div>
+         <div class="project-3">
+            <a href="#">Portfolio Website</a>
+         </div>
+       </div>
+       <div class="project-name">
+        <div class="pro-1"><p><b>Simple Calculator</b></p></div>
+        <div class="pro-2"><p><b>Temperature converter</b></p></div>
+        <div class="pro-3"><p><b>Portfolio Website</b></p></div>
+       </div>
+       <br>
+       <div class="project-list">
+         <div class="project-4">
+            <a href="">To-do List Website</a>
+          </div>
+         <div class="project-5">
+            <a href="">E-commerce Website</a>
+         </div>
+         <div class="project-6">
+            <a href="">Connect Four</a>
+         </div>
+        </div>
+        <div class="project-name">
+            <div class="pro-1"><p><b>To-do List Website</b></p></div>
+            <div class="pro-2"><p><b>E-commerce Website</b></p></div>
+            <div class="pro-3"><p><b>Connect 4 Game</b></p></div>
+           </div>
+    </section>
+    <section class="contact" id="contact-section">
+    <h2 class="heading">Contact<span> Me</span></h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="input-name">
+            <input type="hidden" name="access_key" value="2f5c24f4-d5e5-49b0-8adc-5fa228feb78a">
+            <input type="text" name="name" placeholder="Enter Your Name" required>  
+            <input class="email-1" type="email" name="email" placeholder="Enter Your Mail Id" required>
+        </div>
+        <textarea name="message" cols="20" rows="8" placeholder="Enter your quries Here..."></textarea>
+        <button type="submit" class="button-2">Submit</button>
+    </form>
+</section>
+<div class="get"><h3>Get in touch<span> with me</span></h3></div>
+<section class="so">
+    <div class="socila-media-profile">
+    <a href="https://www.linkedin.com/in/akash0505/"
+      ><i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/akashkumar8917"
+      ><i class="fa-brands fa-github"></i>
+    </a>
+    <a href="mailto:k.akashkumar2005@outlook.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="#home-section" class="to-top"><i class="bi bi-arrow-up"></i><svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+      </svg></a>
+  </div>
+</section>
+<footer><h2>&#169; 2024, Designed by -
+    <a href="https://www.linkedin.com/in/akash-kanar-6b5790292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Akash Kanar</h2></a>
+</footer>
+
+</body>
+</html>

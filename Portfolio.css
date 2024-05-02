@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    text-decoration: none;
+    list-style:none;
+    scroll-behavior: smooth;
+} 
+.body{
+    background-color: black;
+}
+/*header section*/   
+.header{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+padding: 20px 12%;
+background:rgb(52, 50, 50);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:100;
+border-bottom:2px solid blueviolet;
+}
+
+.name{
+font-size: 25px;
+color:white;
+transition: 0.3s ease;
+font-weight: 600;
+}
+.name:hover{
+color:blueviolet;
+text-shadow: 0 0 25px blueviolet,
+             0 0 50px blueviolet;
+transform: scale(1.1);
+}
+.navbar a{
+ font-size: 20px;
+ color:white;
+ font-weight: 600;
+ margin: 0 20px;
+ transition: 0.3s ease;
+}
+.navbar a:hover{
+    color: blueviolet;
+}
+/*home section*/
+.home{
+    width:100%;
+    min-height:100vh;
+    background-color: black;;
+    display:flex;
+    align-items: center;
+    gap:7rem;
+    padding: 30px 12% 0;
+}
+span{
+    color:blueviolet;
+}
+
+.text{
+    max-width:800px;
+    font-family:'Poppins',sans-serif;
+    padding-top:100px;
+    padding-left: 80px;
+    margin-bottom: 100px; 
+}
+.text p1{
+    font-size:35px;
+    color:blueviolet;
+    margin-bottom:5px;
+}
+.text h1{
+    font-size: 60px;
+    line-height: 1.2;
+    color:white;
+}
+/* Animation styles */
+#typing-animation {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) infinite;
+  }
+  
+  #typing-animation:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ccc;
+    animation: typing-cursor 0.5s ease-in-out infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes typing-cursor {
+    from {
+      width: 5px;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+.text p{
+    font-size:18px;
+    margin: 25px 0 20px;
+    font-weight:500;
+    color:white;
+}
+.img{
+    background-image: url("IMG20240229094503.jpg");
+    background-repeat: cover ;
+    background-size: cover;
+    width: 480px;
+    height:450px;
+    margin-left: 0px;
+    margin-right:50px;
+    margin-top: 25px;
+    border-radius: 80%;
+    border: 6px solid rgb(167, 167, 33);
+
+}
+.img{
+    animation: floatImage 5s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button{
+    background-color:blueviolet;
+    color:black;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem blueviolet;
+    font-size:18px;
+    letter-spacing:0.1rem;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:2px;
+    padding-bottom:2px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top:20px;
+    transition: 0.5s ease;
+    width:25px;
+}
+
+.button:hover{
+    box-shadow: none;
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    color: white;
+}
+/*About Section*/
+.imge{
+  background-image: url("IMG20240229094503.jpg");
+  background-repeat: cover ;
+  background-size: cover;
+  width: 450px;
+  height:450px;
+  padding: 150px;
+  margin-bottom:50px;
+  border: 3px solid rgb(167, 167, 33);;
+  border-radius: 20%;
+  box-shadow: 0 0 50px blueviolet;
+}
+.about{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  padding:12% 8%;
+  padding-top:170px;
+  padding-bottom:100px;
+  gap: 10em;
+  background-color: black;
+  
+}
+
+.about-content h2{
+     text-align:left;
+     color:white;
+     font-size:40px;
+}
+.about-content h3{
+    font-size:48px;
+    color:white;
+}
+.about-content p{
+    font-size:20px;
+    color:white;
+    margin:2em 0 3em;
+}
+/*Skill section*/
+.skill{
+    padding-top:100px;
+    padding-bottom:120px;
+    padding-left:100px;
+    background-color: black;
+}
+.shadow{
+  width:90%;
+  border: 2px solid rgba(255, 255, 255, 0.604);
+  --backdrop-filter: blur(20px);
+  box-shadow: 0px 7px 7px 7px rgba(183, 0, 255, 0.612);
+}
+.skill h2{
+    padding-top:20px;
+    padding-bottom:50px;
+    color:white;
+    font-size:40px;
+    margin-left:400px; 
+    padding-left:75px;
+}
+p2{
+    color:white;
+    margin-left:240px;
+}
+p3{
+    color:blueviolet;
+}
+.progress{
+    margin-top:0px;
+}
+.skill-1{
+    margin-left:70px;
+}
+.skill-1 .progress {
+    display: flex;
+    margin:30px 300px 10px 240px;
+    margin-bottom:30px;
+    border-radius: 3px;
+    height: .7rem;
+    background-color:white;
+  }
+
+.skill-1 .progress .progress-bar {
+    height: .7rem;
+    background-color:blueviolet;
+  }
+
+/* Project section */
+.projects{
+  background-color: black;
+  padding-bottom:100px;
+}
+.project-title{
+  padding-top:90px;
+  padding-bottom:40px;
+  text-align:center;
+  color:white;
+  font-size:20px;
+}
+.project-list{
+  display:flex;
+  justify-content: space-between;
+  margin-left:200px;
+  margin-right:200px;
+  color:white;
+}
+.project-list a{
+  padding-top:5px 5px 5px 5px;
+  color:yellow;
+  border:2px solid white;
+  border-radius: 20%;
+  font-size:18px;
+}
+.project-list a:hover{
+  background-color: black;
+  color:white;
+
+}
+.project-1{
+  background-image: url("calculator.jpg");
+  background-repeat: cover ;
+  background-size: cover;
+  border: 3px solid rgb(167, 167, 33);;
+  border-radius: 10%;
+  box-shadow: 0 0 50px blueviolet;
+  padding:80px;
+  cursor:pointer;
+}
+.project-2{
+  background-image: url("Screenshot\ 2024-04-19\ 204748.png");
+  background-repeat: cover ;
+  background-size: cover;
+  border: 3px solid rgb(167, 167, 33);;
+  border-radius: 10%;
+  box-shadow: 0 0 50px blueviolet;
+  padding:80px;
+}
+.project-3{
+  background-image: url("Portfolio.png");
+  background-repeat: cover ;
+  background-size: cover;
+  border: 3px solid rgb(167, 167, 33);;
+  border-radius: 10%;
+  box-shadow: 0 0 50px blueviolet;
+  padding: 90px;
+}
+.projects p{
+  color:white;
+}
+.project-name{
+  display:flex;
+  justify-content: space-between;
+  margin-top:20px;
+  margin-left:200px;
+  margin-right:200px;
+  font-size:20px;
+}
+.pro-1{
+  margin-left:60px;
+  margin-right:40px;
+}
+.pro-2{
+  margin-left:30px;
+  margin-right:40px;
+}
+.pro-3{
+  margin-left:40px;
+  margin-right:80px;
+}
+.div-2{
+  display:flex;
+  justify-content: space-between;
+  margin-top:30px;
+  margin-top:50px;
+  margin-left:200px;
+  margin-right:200px;
+  color:white;
+}
+.project-4{
+  background-image: url("To-do-list.webp");
+  background-repeat: cover ;
+  background-size: cover;
+  border: 3px solid rgb(167, 167, 33);;
+  border-radius: 10%;
+  box-shadow: 0 0 50px blueviolet;
+  padding:80px;
+  cursor:pointer;
+}
+.project-5{
+  background-image: url("Screenshot\ 2024-04-19\ 204525.png");
+  background-repeat: cover ;
+  background-size: cover;
+  border: 3px solid rgb(167, 167, 33);;
+  border-radius: 10%;
+  box-shadow: 0 0 50px blueviolet;
+  padding:80px;
+  cursor:pointer;
+}
+.project-6{
+  background-image: url("To-do-list.webp");
+  background-repeat: cover ;
+  background-size: cover;
+  border: 3px solid rgb(167, 167, 33);;
+  border-radius: 10%;
+  box-shadow: 0 0 50px blueviolet;
+  padding:100px;
+  cursor:pointer;
+}
+/*contact section*/
+.contact{
+  height:720px;
+  padding-top:100px;
+  padding-bottom:100px;
+  background-color: black;
+}
+.contact h2{
+  text-align:center;
+  color:white;
+  font-size:30px;
+}
+.contact form{
+  max-width:50%;
+  margin: 1rem auto;
+  text-align: center;
+  padding:10px;
+}
+.contact form .input-name{
+  display: flex;
+  justify-content: space-between;
+  color:aliceblue;
+}
+
+.contact form .input-name input,
+.contact form textarea {
+  background:transparent;
+  width: 100%;
+  padding:20px;
+  font-size: 26px;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+  border:2px solid whitesmoke;
+}
+
+.contact form .input-name input {
+  width: 50%;
+  padding:2px;
+  font-size: 20px;
+  margin-right:10px;
+  padding-left:10px;
+  color:aliceblue;
+}
+
+.contact form textarea {
+  resize: none;
+  color:aliceblue;
+}
+
+.contact form .button {
+  margin-top:10px;
+  cursor: pointer;
+}
+
+.input-card input:focus {
+  border: 1px solid white;
+}
+
+.contact form textarea:focus {
+  border: 1px solid white;
+  color:white;
+}
+.contact .button-2{
+  background-color:blueviolet;
+  color:black;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem blueviolet;
+  font-size:18px;
+  letter-spacing:0.1rem;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:2px;
+  padding-bottom:2px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top:20px;
+  transition: 0.5s ease;
+}
+.contact .button-2:hover{
+  box-shadow: none;
+  background-color: transparent;
+  border: 2px solid blueviolet;
+  color: white;
+}
+.get{
+  text-align:center;
+  background-color: black;
+  font-size:24px;
+  padding-top:20px;
+}
+.get h3{
+  color:white;
+}
+/*social*/
+.so{
+  background-color: black;
+}
+.socila-media-profile{
+  background-color: black;
+  margin-left:600px;
+}
+.socila-media-profile a {
+  display: inline-flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: transparent;
+  border: 0.2rem solid blueviolet;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: blueviolet;
+  margin: 20px 20px 10px 30px;
+  transition: 0.5s ease;
+}
+
+.socila-media-profile a:hover {
+  background:blueviolet;
+  color: #262840;
+  box-shadow: 0 0 1rem blueviolet;
+}
+.to-top {
+  background-color: blueviolet;
+  position:fixed;
+  bottom:26px;
+  right:10px;
+  padding-right:4px;
+  padding-bottom:3px;
+  padding-top:5px;
+}
+
+footer{
+  text-align: center;
+  color: aqua;
+  background-color: blueviolet;
+  height:30px;
+  font-size:13px;
+}
+footer a{
+  color:white;
+}
+/** Animation **/
